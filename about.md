@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django. Now, I am doing more on backend.
+I'm a process controls engineer/data scientist. I run a "humble" homelab and am passionate about automation.
 
 email: agus[at]python.web.id
