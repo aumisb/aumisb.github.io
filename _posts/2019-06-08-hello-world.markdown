@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll Installation and Blog Deployment"
+title:  "Hello World"
 date:   2019-06-08 21:00:00 -0500
 categories: [jekyll] [blog]
 ---
