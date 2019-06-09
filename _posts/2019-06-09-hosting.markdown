@@ -5,14 +5,14 @@ date: 2019-06-08 21:00:00
 tags: [namecheap, cloudflare, nginx, pfSense]
 ---
 
-This post covers how I provide WAN access to services that are hosted on my server.  On my server. I use `nginx` as a reverse proxy to forward WAN requests to a specific service to the appropriate server application. My `nginx` configuration will be the topic of another post. I use `x.domain.name` for my different services' addresses where `x` is an easy to remember identifier for the service.  
+This post covers how I provide WAN access to services that are hosted on my server.  On my server. I use `nginx` as a reverse proxy to forward WAN requests to a specific service to the appropriate server application. My `nginx` configuration will be the topic of another post. I use `x.domain.name` subdomains for my different services where `x` is an easy to remember identifier for the service.  
 
-I registered a domain at [namecheap](https://namecheap.com) for a $35 annual fee. Instead of using Namecheap's DNS servers/nameservers (Namecheap BasicDNS or Namecheap Web Hosting DNS), I use Cloudflare's nameservers. These can be found on the DNS page after adding a site to your Cloudflare account, and can be subsequently added as "Custom DNS" nameservers in Namecheap's domain settings.
+I registered a domain at [namecheap](https://namecheap.com) for a $35 annual fee. Instead of using Namecheap's DNS servers/nameservers (Namecheap BasicDNS or Namecheap Web Hosting DNS), I use Cloudflare. Cloudflare's DNS servers can be found on the DNS page after adding a site to your Cloudflare account, and can be subsequently added as "Custom DNS" nameservers in Namecheap's domain settings.
 
 ![cloudflare](/static/img/cloudflare-1.png)
 ![namecheap](/static/img/namecheap-1.png)
 
-For each service, I added an `A` type DNS record in Cloudflare 's DNS page.  This requires entering the server's WAN/ISP provided IP, which may change periodically. To keep Cloudflare's DNS records consistent with the current WAN IP, I use the Dynamic DNS service on my pfSense router.  This service natively supports CloudFlare and each service can be added as a client as shown below. 
+For each service/subdomain, I added an `A` type DNS record in Cloudflare 's DNS page.  This requires entering the server's WAN/ISP provided IP, which can change periodically. To keep Cloudflare's DNS records consistent with the current WAN IP, I use the Dynamic DNS service on my pfSense router.  This service natively supports CloudFlare and each service can be added as a client as shown below. 
 
 ![pfSense](/static/img/pfsense-1.png)
 
