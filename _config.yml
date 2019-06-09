@@ -1,8 +1,8 @@
-title: Siam Aumi
+title: Siam's Mind Grapes
 description: Personal blog
 author: Siam
 github: https://github.com/aumisb
-about: I'm a process controls engineer/data scientist. I run a "humble" homelab and am passionate about automation.
+about: I'm a process controls engineer/data scientist. I am passionate about automation and a serial tinkerer with "humble" homelab.
 avatar_url: /static/img/avatar.jpg
 
 enableTags: true
@@ -19,13 +19,13 @@ social:
     # - icon: fa-twitter
     #   link: "#"
     - icon: fa-linkedin
-      link: "#"
+      link: "https://www.linkedin.com/in/siamaumi/"
     # - icon: fa-stack-exchange
     #   link: "#"
     - icon: fa-github
       link: "https://github.com/aumisb"
 
-share:
+# share:
   # twitter_username: github.io
   # fb_appid: 1749788565247320
 
@@ -43,7 +43,7 @@ paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
 markdown: kramdown
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
 
