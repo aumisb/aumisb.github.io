@@ -39,7 +39,8 @@ I like to keep a project dependent `settings.json` file in the `.vscode` subdire
   {
     "name": "latexmk",
     "command": "latexmk",
-    "args": ["-shell-escape", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-pdf", "-outdir=%OUTDIR%", "%DOC%"],
+    "args": [ "-shell-escape", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", 
+              "-pdf", "-outdir=%OUTDIR%", "%DOC%"],
     "env": {}
   },
   {
@@ -57,13 +58,15 @@ I like to keep a project dependent `settings.json` file in the `.vscode` subdire
   {
     "name": "xelatex",
     "command": "xelatex",
-    "args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"],
+    "args": [ "-synctex=1", "-interaction=nonstopmode", 
+              "-file-line-error", "%DOC%"],
     "env": {}
   },
   {
     "name": "texify",
     "command": "texify",
-    "args": ["--synctex", "--pdf", "--tex-option=\"-interaction=nonstopmode\"", "--tex-option=\"-file-line-error\"", "%DOC%.tex"],
+    "args": [ "--synctex", "--pdf", "--tex-option=\"-interaction=nonstopmode\"", 
+              "--tex-option=\"-file-line-error\"", "%DOC%.tex"],
     "env": {}
    }  
 ]
