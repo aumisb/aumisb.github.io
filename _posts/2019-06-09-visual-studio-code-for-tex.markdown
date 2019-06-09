@@ -20,87 +20,50 @@ I like to keep a project dependent `settings.json` file in the `.vscode` subdire
 "latex-workshop.latex.recipes": [
   {
     "name": "latexmk",
-    "tools": [
-      "latexmk"
-    ]
+    "tools": ["latexmk"]
   },
   {
     "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
-    "tools": [
-      "pdflatex",
-      "bibtex",
-      "pdflatex",
-      "pdflatex"
-    ]
+    "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
   },
   {
     "name": "xelatex",
-    "tools": [
-      "xelatex"
-    ]
+    "tools": ["xelatex"]
   },  
   {
     "name": "texify",
-    "tools": [
-      "texify"
-    ]
+    "tools": ["texify"]
   }
 ],
 "latex-workshop.latex.tools": [
   {
     "name": "latexmk",
     "command": "latexmk",
-    "args": [
-      "-shell-escape",
-      "-synctex=1",
-      "-interaction=nonstopmode",
-      "-file-line-error",
-      "-pdf",
-      "-outdir=%OUTDIR%",
-      "%DOC%"
-    ],
+    "args": ["-shell-escape", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-pdf", "-outdir=%OUTDIR%", "%DOC%"],
     "env": {}
   },
   {
     "name": "pdflatex",
     "command": "pdflatex",
-    "args": [
-      "-synctex=1",
-      "-interaction=nonstopmode",
-      "-file-line-error",
-      "%DOC%"
-    ],
+    "args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"],
     "env": {}
   },
   {
     "name": "bibtex",
     "command": "bibtex",
-    "args": [
-      "%DOCFILE%"
-    ],
+    "args": ["%DOCFILE%"],
     "env": {}
   },
   {
     "name": "xelatex",
     "command": "xelatex",
-    "args": [
-      "-synctex=1",
-      "-interaction=nonstopmode",
-      "-file-line-error",
-      "%DOC%"
-    ],
+    "args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"],
     "env": {}
   },
   {
     "name": "texify",
     "command": "texify",
-    "args": [
-        "--synctex",
-        "--pdf",
-        "--tex-option=\"-interaction=nonstopmode\"",
-        "--tex-option=\"-file-line-error\"",
-        "%DOC%.tex"
-    ],
+    "args": ["--synctex", "--pdf", "--tex-option=\"-interaction=nonstopmode\"", "--tex-option=\"-file-line-error\"", "%DOC%.tex"],
     "env": {}
    }  
 ]
