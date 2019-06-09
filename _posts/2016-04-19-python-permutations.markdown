@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Python Permutations"
-date:   2016-04-19 19:31:43 +0700
-categories: [python]
+title:  "Jekyll Installation and Blog Deployment"
+date:   2019-06-08 21:00:00 -0500
+categories: [jekyll] [blog]
 ---
 This simply how to implement the module of permutations in python.
 

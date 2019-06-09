@@ -1,6 +1,6 @@
 title: Siam Aumi
 description: Personal blog
-author: Siam Aumi
+author: Test Author
 github: https://github.com/aumisb
 about: I'm a process controls engineer/data scientist. I run a "humble" homelab and am passionate about automation.
 avatar_url: /static/img/avatar.jpg
@@ -14,10 +14,10 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "#"
+    # - icon: fa-facebook
+    #   link: "#"
+    # - icon: fa-twitter
+    #   link: "#"
     - icon: fa-linkedin
       link: "#"
     - icon: fa-stack-exchange
@@ -26,8 +26,8 @@ social:
       link: "https://github.com/agusmakmun"
 
 share:
-  twitter_username: github.io
-  fb_appid: 1749788565247320
+  # twitter_username: github.io
+  # fb_appid: 1749788565247320
 
 urls:
     - text: About Me
