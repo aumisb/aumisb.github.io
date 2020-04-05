@@ -7,14 +7,14 @@ tags: [latex, tex, xelatex, code, linux]
 
 This post covers my LaTeX Workshop extension settings in Visual Studio Code settings for compiling TeX documents. 
 
-TeX files are compiled by calling the "Build LaTeX project" command (<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>b</kbd>) from the command palette or from the TeX badge. LaTeX Workshop uses the concepts of *recipes*, which, in turn, calls a sequence of *tools*. Recipes are defined in `latex-workshop.latex.recipes` while tools are defined in `latex-workshop.latex.tools`. 
+TeX files are compiled by calling the "Build LaTeX project" command (<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>b</kbd>) from the command palette or from the TeX badge. LaTeX Workshop uses the concepts of *recipes*, wherein each recipe calls a sequence of *tools*. Recipes are defined in `latex-workshop.latex.recipes` while tools are defined in `latex-workshop.latex.tools`. 
 
 The recipe called by the "Build LaTeX project" command is defined by `latex-workshop.latex.recipe.default`, which can be either `first` or `lastUSed`.
 
 I like to keep a project dependent `settings.json` file in the `.vscode` subdirectory of the root/project directory.  A complete `settings.json` file is shown below. Entries can be taken out as needed for the project.
 
 ```json
-"latex-workshop.intellisense.package.enabled": "true"
+"latex-workshop.intellisense.package.enabled": "true",
 "latex-workshop.latex.autoClean.run": "onFailed",
 "latex-workshop.latex.recipe.default": "first",
 "latex-workshop.latex.recipes": [
